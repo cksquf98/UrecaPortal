@@ -41,20 +41,39 @@
       등록된 회원이 없습니다.
    </c:if>
    <div>
-   자리 
-   4*4 - 마지막 열은 3줄
-   <c:if test="${ !empty seats }">
+   자리
+<c:if test="${ !empty seats }">
    <table border="1">
-   <c:forEach items="${seats}" var="seat" varStatus="loop">
-   			<script>
-   			console.log("${loop.index}")</script>
-            
-   </c:forEach>
+      <c:forEach items="${seats}" var="seat" varStatus="loop">   
+         <c:if test="${loop.index % 4 == 0}">
+            <tr>
+         </c:if>
+         <td>${seat.leftseat}<br/>
+         ${seat.rightseat}</td>
+         <c:if test="${loop.index % 4 == 3 or loop.last}">
+            </tr>
+         </c:if>
+      </c:forEach>
    </table>
+   
+   <button onclick="changeSeat()">자리 변경하기</button>
+   <button onclick="myPage()">마이페이지</button>
    </c:if>
+   
+   
    <c:if test="${ empty seats }">  
       등록된 자리가 없습니다.
    </c:if>
    </div>
 </body>
+<script type="text/javascript">
+	function changeSeat() {
+		location.href="seat"
+	}
+	
+	function myPage() {
+		location.href="myPage"
+	}
+	
+</script>
 </html>

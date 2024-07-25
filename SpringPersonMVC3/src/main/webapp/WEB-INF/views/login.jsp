@@ -64,10 +64,11 @@ input[type=submit]:hover {
 	<div class="container">
 		<h2>Login</h2>
 		<form action="login" method="post">
-			<label for="id">ID</label> <input type="text" id="id" name="id"
-				required> <label for="password">PW</label> <input
-				type="password" id="password" name="password" required> <input
-				type="submit" value="Login">
+			<label for="id">ID</label>
+			<input type="text" id="id" name="id" required>
+			<label for="password">PW</label>
+			<input type="password" id="password" name="password" required>
+			<input type="submit" value="Login">
 		</form>
 	</div>
 </body>

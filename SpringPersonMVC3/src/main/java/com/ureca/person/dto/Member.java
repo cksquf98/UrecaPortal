@@ -16,8 +16,9 @@ public class Member {
     	this.setPassword(password);
     }
 
-	public Member(String id, String name, String password, 
+	public Member(int member_idx,String id, String name, String password, 
 				  String phone, int seat, String location) {
+		this.setMember_idx(member_idx);
 		this.setId(id);
 		this.setName(name);
     	this.setPassword(password);

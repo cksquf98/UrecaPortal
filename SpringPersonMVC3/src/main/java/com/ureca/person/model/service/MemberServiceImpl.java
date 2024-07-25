@@ -36,8 +36,8 @@ public class MemberServiceImpl implements MemberService {
 	}
 
 	@Override
-	public Member read(int member_idx) throws SQLException {
-		return dao.select(member_idx);
+	public Member read(String id) throws SQLException {
+		return dao.select(id);
 	}
 
 	@Override
@@ -54,5 +54,10 @@ public class MemberServiceImpl implements MemberService {
 	@Override
 	public int idCheck(String id) throws SQLException {
 		return dao.idCheck(id);
+	}
+
+	@Override
+	public List<Member> allocateSeat() throws SQLException {
+		return dao.allocateSeat();
 	}
 }
