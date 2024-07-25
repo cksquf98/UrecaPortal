@@ -19,14 +19,14 @@
 			height: 100vh;
 		}
 		#banner {
-			background-image: url("../../img/Banner.png");
+			background-image: url("");
 			background-size: cover;
 			background-repeat : no-repeat;
 			background-position: center;
 			width: 100%;
 			height: auto;
 			text-align: center;
-			flex: 4;
+			flex: 1;
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -37,7 +37,7 @@
 			text-align: center;
 			background-color: white;
 			margin : 50px;
-			color: pink;
+			color: #FF36B5;
 			font-size: 18px;
 			flex: 1;
 			display: flex;
@@ -56,25 +56,28 @@
 		}
 		.buttons button {
 			background-color: white;
-			border: 2px solid #ddd;
+			border: 2px solid #FF36B5;
 			padding: 15px 40px;
 			cursor: pointer;
 			border-radius: 5px;
 			transition: background-color 0.3s, border-color 0.3s;
-			font-size: 18px;
 			font-family: "Jua", sans-serif;
 			font-weight: 400;
 			font-style: normal;
+			font-size: 18px;
+			color : #FF36B5;
 		}
 		.buttons button:hover {
+			font-family: "Jua", sans-serif;
 			background-color: #f0f0f0;
-			border-color: #ccc;
+			border-color: #FF36B5;
 		}
 	</style>
 </head>
 <body>
+<img src="../../img/ureca_logo.png" alt="URECA Logo" class="logo" style="max-width: 150px; height: auto; margin-bottom: 20px;">
 <div id="banner">
-	Welcome to Ureca Portal!
+
 </div>
 <div id="content">
 	<div id="message">
