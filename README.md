@@ -57,6 +57,12 @@ create table seats(
 	seat_empty boolean,
 	foreign key (seat_owner) references members(member_idx)
 );
+
+alter table seats drop primary key;
+alter table seats change column seat_owner seat_owner1 int;
+
+alter table seats add column seat_owner2 int;
+alter table seats add foreign key(seat_owner2) references members(member_idx); 
 ```
 
 - 유저 seat 정보가 들어가면 seats의 seat_owner에 값 들어가게 trigger 만들어야징
