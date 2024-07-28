@@ -93,4 +93,4 @@ alter table seats add foreign key(seat_owner2) references members(member_idx);
 <br>
 
 7/27
-- 로그아웃 추가 ~.~
+- 로그아웃 추가 🐱
