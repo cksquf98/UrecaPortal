@@ -89,3 +89,8 @@ alter table seats add foreign key(seat_owner2) references members(member_idx);
 - 디비 컬럼 추가되어서 회원정보 수정 SQL문 변경함
 - 자리 변경 구현 -> 트리거 생성해서 기존 테이블에 새 자리 저장되도록
 - 회원가입 -> 트리거 생성
+
+<br>
+
+7/27
+- 로그아웃 추가 ~.~
