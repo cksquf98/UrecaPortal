@@ -48,6 +48,7 @@
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item"><a class="nav-link" href="seat" style="color : #ff1493">자리 변경</a></li>
 				<li class="nav-item"><a class="nav-link" href="myPage" style="color : #ff1493">마이페이지</a></li>
+				<li class="nav-item"><a class="nav-link" href="logout" style="color : #ff1493">로그아웃</a></li>
 			</ul>
 		</div>
 	</div>
@@ -126,8 +127,10 @@
 		</div>
 	</div>
 </section>
+</body>
 <!-- Bootstrap core JS-->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+
+
 </html>
